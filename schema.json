@@ -1,0 +1,57 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://meeshkan.com/http-request-response.json",
+  "type": "object",
+  "required": [],
+  "properties": {
+    "req": {
+      "type": "object",
+      "required": ["protocol", "method", "headers", "path", "host"],
+      "properties": {
+        "body": {
+          "type": "string"
+        },
+        "protocol": {
+          "type": "string",
+          "enum": ["http", "https"]
+        },
+        "method": {
+          "type": "string"
+        },
+        "headers": {
+          "type": "object",
+          "required": [],
+          "additionalProperties": { "type": "string" }
+        },
+        "query": {
+          "type": "object",
+          "required": [],
+          "additionalProperties": { "type": "string" }
+        },
+        "path": {
+          "type": "string"
+        },
+        "host": {
+          "type": "string"
+        }
+      }
+    },
+    "res": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "statusCode": {
+          "type": "number"
+        },
+        "body": {
+          "type": "string"
+        },
+        "headers": {
+          "type": "object",
+          "required": [],
+          "additionalProperties": { "type": "string" }
+        }
+      }
+    }
+  }
+}
