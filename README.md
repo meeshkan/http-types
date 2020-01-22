@@ -36,7 +36,7 @@ A single request and response pair is represented as shown in the below example:
 }
 ```
 
-The format is described in the [schema.json](schema.json) file in this repository.
+The format is described in [http-types-schema.json](http-types-schema.json).
 
 A series of request and responses should use the [JSON Lines](http://jsonlines.org/)
 format, with each line being an object as defined by the schema above.
