@@ -1,4 +1,6 @@
 # HTTP Types
+[![MIT licensed](http://img.shields.io/:license-MIT-blue.svg)](LICENSE.txt)
+
 Format for HTTP requests and responses and libraries for representing them in different programming languages.
 
 # Implementations
