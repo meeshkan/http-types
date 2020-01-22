@@ -31,6 +31,9 @@
         "path": {
           "type": "string"
         },
+        "pathname": {
+          "type": "string"
+        },
         "host": {
           "type": "string"
         }
