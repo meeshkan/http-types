@@ -1,4 +1,5 @@
 # HTTP Types
+[![Build Status](https://github.com/Meeshkan/http-types/workflows/CI/badge.svg)](https://github.com/Meeshkan/http-types/actions?query=workflow%3A%22CI%22)
 [![MIT licensed](http://img.shields.io/:license-MIT-blue.svg)](LICENSE.txt)
 
 Format for HTTP requests and responses and libraries for representing them in different programming languages.
