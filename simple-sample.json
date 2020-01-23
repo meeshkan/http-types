@@ -1,5 +1,5 @@
 {
-  "req": {
+  "request": {
     "protocol": "http",
     "method": "get",
     "headers": {
@@ -10,7 +10,7 @@
     "pathname": "/user/repos",
     "host": "example.com"
   },
-  "res": {
+  "response": {
     "statusCode": 200,
     "body": "...",
     "headers": {

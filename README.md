@@ -15,7 +15,7 @@ A single request and response pair is represented as shown in the below example:
 
 ```json
 {
-  "req": {
+  "request": {
     "protocol": "http",
     "method": "get",
     "headers": {
@@ -26,7 +26,7 @@ A single request and response pair is represented as shown in the below example:
     "pathname": "/user/repos",
     "host": "example.com"
   },
-  "res": {
+  "response": {
     "statusCode": 200,
     "body": "...",
     "headers": {
