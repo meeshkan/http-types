@@ -12,6 +12,6 @@ jobs:
     - name: Install python
       run: sudo apt-get install python3-pip
     - name: Install jsonschema
-      run: sudo pip3 install jsonschema
+      run: sudo pip3 install --upgrade jsonschema
     - name: Test samples against JSON schema
       run: ./test.sh
