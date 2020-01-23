@@ -1,14 +1,11 @@
 {
   "req": {
-    "protocol": "http",
+    "url": "http://example.com/user/repos?param1=value1&param2=value2",
     "method": "get",
     "headers": {
       "accept": "*/*",
       "user-agent": "Mozilla/5.0 (pc-x86_64-linux-gnu) Siege/3.0.8"
-    },
-    "path": "/user/repos",
-    "pathname": "/user/repos",
-    "host": "example.com"
+    }
   },
   "res": {
     "statusCode": 200,

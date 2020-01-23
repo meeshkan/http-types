@@ -8,14 +8,14 @@
   "properties": {
     "req": {
       "type": "object",
-      "required": ["protocol", "method", "headers", "path", "host"],
+      "required": ["url", "method", "headers"],
       "properties": {
+        "url": {
+          "type": "string",
+          "pattern": "https?://"
+        },
         "body": {
           "type": "string"
-        },
-        "protocol": {
-          "type": "string",
-          "enum": ["http", "https"]
         },
         "method": {
           "type": "string"
@@ -24,20 +24,6 @@
           "type": "object",
           "required": [],
           "additionalProperties": { "type": "string" }
-        },
-        "query": {
-          "type": "object",
-          "required": [],
-          "additionalProperties": { "type": "string" }
-        },
-        "path": {
-          "type": "string"
-        },
-        "pathname": {
-          "type": "string"
-        },
-        "host": {
-          "type": "string"
         }
       }
     },

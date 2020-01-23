@@ -16,15 +16,12 @@ A single request and response pair is represented as shown in the below example:
 ```json
 {
   "req": {
-    "protocol": "http",
+    "url": "http://example.com/user/repos?param=value",
     "method": "get",
     "headers": {
       "accept": "*/*",
       "user-agent": "Mozilla/5.0 (pc-x86_64-linux-gnu) Siege/3.0.8"
-    },
-    "path": "/user/repos",
-    "pathname": "/user/repos",
-    "host": "example.com"
+    }
   },
   "res": {
     "statusCode": 200,
