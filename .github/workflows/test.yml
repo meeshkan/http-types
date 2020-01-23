@@ -10,7 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Install python
-      run: sudo apt-get install python3-pip
+      run: sudo apt-get install python3-pip python3-setuptools
     - name: Install jsonschema
       run: sudo pip3 install --upgrade jsonschema
     - name: Test samples against JSON schema
