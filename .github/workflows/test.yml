@@ -1,0 +1,17 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Install python
+      run: sudo apt-get install python3-pip
+    - name: Install jsonschema
+      run: sudo pip3 install jsonschema
+    - name: Test samples against JSON schema
+      run: ./test.sh
