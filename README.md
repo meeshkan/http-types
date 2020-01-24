@@ -7,8 +7,8 @@ Format for HTTP requests and responses and libraries for representing them in di
 # Implementations
 Don't see your language of choice here? If you write your own and [tell us about it](https://github.com/Meeshkan/http-types/issues/new) we'll add it to this list:
 
-- [Java (and JVM-based languages)](https://github.com/Meeshkan/java-http-types): Available on [Maven Central](https://search.maven.org/artifact/com.meeshkan.http-types).
-- [Python](https://github.com/Meeshkan/py-http-types): Available on [PyPi](https://pypi.org/project/http-types/).
+- [java-http-types](https://github.com/Meeshkan/java-http-types): Java implementation, available on [Maven Central](https://search.maven.org/artifact/com.meeshkan.http-types).
+- [py-http-types](https://github.com/Meeshkan/py-http-types): Python implementation, available on [PyPi](https://pypi.org/project/http-types/).
 
 # JSON representation
 A single request and response pair is represented as shown in the below example:
