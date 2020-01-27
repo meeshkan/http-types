@@ -4,9 +4,9 @@
   "type": "object",
   "title": "HttpExchange",
   "description": "A HTTP request and response pair.",
-  "required": [ "req" ],
+  "required": [ "request" ],
   "properties": {
-    "req": {
+    "request": {
       "type": "object",
       "required": ["protocol", "method", "headers", "path", "host"],
       "properties": {
@@ -41,7 +41,7 @@
         }
       }
     },
-    "res": {
+    "response": {
       "type": "object",
       "required": [],
       "properties": {
