@@ -7,6 +7,8 @@
   "required": [ "request" ],
   "properties": {
     "request": {
+      "title": "HttpRequest",
+      "description": "A HTTP request.",
       "type": "object",
       "required": ["protocol", "method", "headers", "path", "host"],
       "properties": {
@@ -18,7 +20,8 @@
           "enum": ["http", "https"]
         },
         "method": {
-          "type": "string"
+          "type": "string",
+          "enum": ["get", "put", "post", "patch", "delete", "options", "trace", "head", "connect"]
         },
         "headers": {
           "type": "object",
@@ -42,6 +45,8 @@
       }
     },
     "response": {
+      "title": "HttpResponse",
+      "description": "A HTTP response.",
       "type": "object",
       "required": [],
       "properties": {
