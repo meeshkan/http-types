@@ -23,7 +23,8 @@ A single request and response pair is represented as shown in the below example:
       "user-agent": "Mozilla/5.0 (pc-x86_64-linux-gnu) Siege/3.0.8"
     },
     "pathname": "/user/repos",
-    "query": { "param": "value" }
+    "query": { "param": "value" },
+    "timestamp": "2018-11-13T20:20:39+01:00"
   },
   "response": {
     "statusCode": 200,
@@ -31,7 +32,8 @@ A single request and response pair is represented as shown in the below example:
     "headers": {
       "content-length": "1999",
       "content-type": "text/html; charset=utf-8"
-    }
+    },
+    "timestamp": "2018-11-13T20:20:39+02:00"
   }
 }
 ```

@@ -47,11 +47,6 @@
               ]
           }
         },
-        "body": {
-          "title": "HttpRequestBody",
-          "description": "The request body string.",
-          "type": "string"
-        },
         "headers": {
           "type": "object",
           "required": [],
@@ -61,6 +56,17 @@
                 { "type": "array", "items": { "type": "string" } }
               ]
           }
+        },
+        "body": {
+          "title": "HttpRequestBody",
+          "description": "The request body string.",
+          "type": "string"
+        },
+        "timestamp": {
+          "title": "HttpRequestTimestamp",
+          "description": "The time at which the HTTP request was initiated in ISO 8601 format, as in '2018-11-13T20:20:39+00:00'.",
+          "type": "string",
+          "format": "date-time"
         }
       },
       "additionalProperties": false
@@ -86,6 +92,12 @@
                 { "type": "array", "items": { "type": "string" } }
               ]
           }
+        },
+        "timestamp": {
+          "title": "HttpResponseTimestamp",
+          "description": "The time at which the HTTP response was completed on the server side in ISO 8601 format, as in '2018-11-13T20:20:39+00:00'.",
+          "type": "string",
+          "format": "date-time"
         }
       },
       "additionalProperties": false
