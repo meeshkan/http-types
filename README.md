@@ -4,7 +4,7 @@
 HTTP Types is a format for HTTP exchanges and libraries for working with that format.
 
 # Why?
-At [Meeshkan](https://www.meeshkan.com/) we think that HTTP traffic is really interesting and that much can be learned from it!
+At [Meeshkan](https://www.meeshkan.com/) we think that HTTP traffic is interesting and that much can be learned from it!
 
 Having a simple format that can be created from and processed in a variety of programming languages helps out with that.
 
