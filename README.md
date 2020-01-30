@@ -53,3 +53,6 @@ tool installed one can verify the first row of an input file with the command:
 ```sh
 jsonschema -i <(head -n 1 resources/sample.jsonl) input-schema.json
 ```
+
+# Reporting issues
+[Create an issue](https://github.com/Meeshkan/http-types/issues) if you have any issue or idea for the format.
