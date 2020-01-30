@@ -15,7 +15,10 @@ Don't see your language of choice here? If you write your own and [tell us about
 - [py-http-types](https://github.com/Meeshkan/py-http-types): Python implementation available on [PyPi](https://pypi.org/project/http-types/).
 
 # JSON representation
-A single request and response pair is represented as shown in the below example:
+While most use cases can be covered by using one of the above listed libraries, you may want to process the JSON data directly.
+
+The format is described in [http-types-schema.json](http-types-schema.json) and
+an example of a single HTTP exchange is given below.
 
 ```json
 {
@@ -41,16 +44,14 @@ A single request and response pair is represented as shown in the below example:
 }
 ```
 
-The format is described in [http-types-schema.json](http-types-schema.json).
-
-A series of request and responses should use the [JSON Lines](http://jsonlines.org/)
-format, with each line being an object as defined by the schema above.
+A series of request and responses uses the [JSON Lines](http://jsonlines.org/)
+format, with each line being an object as defined by the above mentioned schema.
 
 With the [jsonschema](https://python-jsonschema.readthedocs.io/) command-line validation
 tool installed one can verify the first row of an input file with the command:
 
 ```sh
-jsonschema -i <(head -n 1 resources/sample.jsonl) input-schema.json
+jsonschema -i <(head -n 1 resources/sample.jsonl) http-types-schema.json
 ```
 
 # Reporting issues
