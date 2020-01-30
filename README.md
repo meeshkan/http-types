@@ -3,6 +3,9 @@
 
 Format for recorded HTTP exchanges and libraries for working with that format.
 
+# Why?
+At [Meeshkan](https://www.meeshkan.com/) we think that HTTP traffic is really interesting and that much can be learnt from it! Having a simple format that can be created from and processed in a variety of programming languages will help out with that.
+
 # Implementations
 Don't see your language of choice here? If you write your own and [tell us about it](https://github.com/Meeshkan/http-types/issues/new) we'll add it to this list:
 
