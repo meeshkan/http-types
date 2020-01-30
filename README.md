@@ -1,8 +1,7 @@
-# HTTP Types
 [![Build Status](https://github.com/Meeshkan/http-types/workflows/CI/badge.svg)](https://github.com/Meeshkan/http-types/actions?query=workflow%3A%22CI%22)
 [![MIT licensed](http://img.shields.io/:license-MIT-blue.svg)](LICENSE.txt)
 
-Format for recorded HTTP exchanges and libraries for working with that format.
+HTTP Types is a format for recorded HTTP exchanges and libraries for working with that format.
 
 # Why?
 At [Meeshkan](https://www.meeshkan.com/) we think that HTTP traffic is really interesting and that much can be learnt from it!
