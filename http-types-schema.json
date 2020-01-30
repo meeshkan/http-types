@@ -12,10 +12,11 @@
       "type": "object",
       "required": ["protocol", "method", "headers", "host"],
       "properties": {
-        "body": {
-          "title": "HttpRequestBody",
-          "description": "The request body string.",
-          "type": "string"
+        "method": {
+          "title": "HttpMethod",
+          "description": "The HTTP method of a request.",
+          "type": "string",
+          "enum": ["get", "put", "post", "patch", "delete", "options", "trace", "head", "connect"]
         },
         "protocol": {
           "title": "HttpProtocol",
@@ -23,21 +24,18 @@
           "type": "string",
           "enum": ["http", "https"]
         },
-        "method": {
-          "title": "HttpMethod",
-          "description": "The HTTP method of a request.",
-          "type": "string",
-          "enum": ["get", "put", "post", "patch", "delete", "options", "trace", "head", "connect"]
+        "host": {
+          "title": "HttpHost",
+          "description": "The hostname and optional port, as in '$HOSTNAME[:$PORT]'.",
+          "type": "string"
         },
-        "headers": {
-          "type": "object",
-          "required": [],
-          "additionalProperties": {
-              "anyOf": [
-                { "type": "string" },
-                { "type": "array", "items": { "type": "string" } }
-              ]
-          }
+        "path": {
+          "description": "Path name and query parameters, as in '/a/path?q=v'. This duplicates the information in 'pathname' and 'query', so should not be present at the same time.",
+          "type": "string"
+        },
+        "pathname": {
+          "description": "Path name without query parameters, as in '/a/path'. This duplicates the information in 'path', so should not be present at the same time.",
+          "type": "string"
         },
         "query": {
           "type": "object",
@@ -49,16 +47,20 @@
               ]
           }
         },
-        "path": {
-          "description": "Path name and query parameters, as in '/a/path?q=v'. This duplicates the information in 'pathname' and 'query', so should not be present at the same time.",
+        "body": {
+          "title": "HttpRequestBody",
+          "description": "The request body string.",
           "type": "string"
         },
-        "pathname": {
-          "description": "Path name without query parameters, as in '/a/path'. This duplicates the information in 'path', so should not be present at the same time.",
-          "type": "string"
-        },
-        "host": {
-          "type": "string"
+        "headers": {
+          "type": "object",
+          "required": [],
+          "additionalProperties": {
+              "anyOf": [
+                { "type": "string" },
+                { "type": "array", "items": { "type": "string" } }
+              ]
+          }
         }
       },
       "additionalProperties": false
