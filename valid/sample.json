@@ -4,10 +4,14 @@
     "method": "get",
     "headers": {
       "accept": "*/*",
-      "user-agent": "Mozilla/5.0 (pc-x86_64-linux-gnu) Siege/3.0.8"
+      "user-agent": "Mozilla/5.0 (pc-x86_64-linux-gnu) Siege/3.0.8",
+      "h": [ "v1", "v2" ]
     },
-    "path": "/user/repos",
     "pathname": "/user/repos",
+    "query": {
+        "p1": "v",
+        "p2": [ "v1", "v2" ]
+    },
     "host": "example.com"
   },
   "response": {

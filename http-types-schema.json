@@ -10,7 +10,7 @@
       "title": "HttpRequest",
       "description": "A HTTP request.",
       "type": "object",
-      "required": ["protocol", "method", "headers", "path", "host"],
+      "required": ["protocol", "method", "headers", "host"],
       "properties": {
         "body": {
           "type": "string"
@@ -26,12 +26,22 @@
         "headers": {
           "type": "object",
           "required": [],
-          "additionalProperties": { "type": "string" }
+          "additionalProperties": {
+              "anyOf": [
+                { "type": "string" },
+                { "type": "array", "items": { "type": "string" } }
+              ]
+          }
         },
         "query": {
           "type": "object",
           "required": [],
-          "additionalProperties": { "type": "string" }
+          "additionalProperties": {
+              "anyOf": [
+                { "type": "string" },
+                { "type": "array", "items": { "type": "string" } }
+              ]
+          }
         },
         "path": {
           "type": "string"
