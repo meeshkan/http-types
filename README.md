@@ -32,7 +32,8 @@ an example of a single HTTP exchange is given below.
       "user-agent": "Mozilla/5.0 (pc-x86_64-linux-gnu) Siege/3.0.8"
     },
     "pathname": "/user/repos",
-    "query": { "param": "value" }
+    "query": { "param": "value" },
+    "timestamp": "2018-11-13T20:20:39+01:00"
   },
   "response": {
     "statusCode": 200,
@@ -40,7 +41,8 @@ an example of a single HTTP exchange is given below.
     "headers": {
       "content-length": "1999",
       "content-type": "text/html; charset=utf-8"
-    }
+    },
+    "timestamp": "2018-11-13T20:20:39+02:00"
   }
 }
 ```
