@@ -5,12 +5,12 @@
     "headers": {
       "accept": "*/*",
       "user-agent": "Mozilla/5.0 (pc-x86_64-linux-gnu) Siege/3.0.8",
-      "h": [ "v1", "v2" ]
+      "h": ["v1", "v2"]
     },
     "pathname": "/user/repos",
     "query": {
         "p1": "v",
-        "p2": [ "v1", "v2" ]
+        "p2": ["v1", "v2"]
     },
     "host": "example.com"
   },
@@ -19,7 +19,8 @@
     "body": "...",
     "headers": {
       "content-length": "1999",
-      "content-type": "text/html; charset=utf-8"
+      "content-type": "text/html; charset=utf-8",
+      "h": ["v1", "v2"]
     }
   }
 }

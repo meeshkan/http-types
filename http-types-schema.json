@@ -13,13 +13,19 @@
       "required": ["protocol", "method", "headers", "host"],
       "properties": {
         "body": {
+          "title": "HttpRequestBody",
+          "description": "The request body string.",
           "type": "string"
         },
         "protocol": {
+          "title": "HttpProtocol",
+          "description": "The protocol of the request, either unencrypted http or encrypted https.",
           "type": "string",
           "enum": ["http", "https"]
         },
         "method": {
+          "title": "HttpMethod",
+          "description": "The HTTP method of a request.",
           "type": "string",
           "enum": ["get", "put", "post", "patch", "delete", "options", "trace", "head", "connect"]
         },
@@ -44,21 +50,24 @@
           }
         },
         "path": {
+          "description": "Path name and query parameters, as in '/a/path?q=v'. This duplicates the information in 'pathname' and 'query', so should not be present at the same time.",
           "type": "string"
         },
         "pathname": {
+          "description": "Path name without query parameters, as in '/a/path'. This duplicates the information in 'path', so should not be present at the same time.",
           "type": "string"
         },
         "host": {
           "type": "string"
         }
-      }
+      },
+      "additionalProperties": false
     },
     "response": {
       "title": "HttpResponse",
       "description": "A HTTP response.",
       "type": "object",
-      "required": [],
+      "required": [ "statusCode" ],
       "properties": {
         "statusCode": {
           "type": "number"
@@ -69,9 +78,16 @@
         "headers": {
           "type": "object",
           "required": [],
-          "additionalProperties": { "type": "string" }
+          "additionalProperties": {
+              "anyOf": [
+                { "type": "string" },
+                { "type": "array", "items": { "type": "string" } }
+              ]
+          }
         }
-      }
+      },
+      "additionalProperties": false
     }
-  }
+  },
+  "additionalProperties": false
 }

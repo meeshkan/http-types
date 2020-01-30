@@ -15,15 +15,15 @@ A single request and response pair is represented as shown in the below example:
 ```json
 {
   "request": {
-    "protocol": "http",
     "method": "get",
+    "protocol": "http",
+    "host": "example.com",
     "headers": {
       "accept": "*/*",
       "user-agent": "Mozilla/5.0 (pc-x86_64-linux-gnu) Siege/3.0.8"
     },
-    "path": "/user/repos",
     "pathname": "/user/repos",
-    "host": "example.com"
+    "query": { "param": "value" }
   },
   "response": {
     "statusCode": 200,
