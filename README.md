@@ -1,4 +1,3 @@
-# HTTP Types
 [![Build Status](https://github.com/Meeshkan/http-types/workflows/CI/badge.svg)](https://github.com/Meeshkan/http-types/actions?query=workflow%3A%22CI%22)
 [![MIT licensed](http://img.shields.io/:license-MIT-blue.svg)](LICENSE.txt)
 
@@ -7,7 +6,7 @@ Format for HTTP requests and responses and libraries for representing them in di
 # Implementations
 Don't see your language of choice here? If you write your own and [tell us about it](https://github.com/Meeshkan/http-types/issues/new) we'll add it to this list:
 
-- [java-http-types](https://github.com/Meeshkan/java-http-types): Java implementation, available on [Maven Central](https://search.maven.org/artifact/com.meeshkan.http-types).
+- [java-http-types](https://github.com/Meeshkan/java-http-types): Java implementation, available on [Maven Central](https://search.maven.org/artifact/com.meeshkan/http-types).
 - [py-http-types](https://github.com/Meeshkan/py-http-types): Python implementation, available on [PyPi](https://pypi.org/project/http-types/).
 
 # JSON representation
