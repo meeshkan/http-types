@@ -13,7 +13,7 @@ Don't see your language of choice here? If you write your own and [tell us about
 
 - [java-http-types](https://github.com/Meeshkan/java-http-types): Java implementation available on [Maven Central](https://search.maven.org/artifact/com.meeshkan/http-types).
 - [py-http-types](https://github.com/Meeshkan/py-http-types): Python implementation available on [PyPi](https://pypi.org/project/http-types/).
-- [ts-http-types](https://github.com/Meeshkan/ts-http-types): TypeSCript implementation available on [npm](https://www.npmjs.com/package/http-types).
+- [ts-http-types](https://github.com/Meeshkan/ts-http-types): TypeScript implementation available on [npm](https://www.npmjs.com/package/http-types).
 
 # JSON representation
 While most use cases can be covered by using one of the above listed libraries, you may want to process the JSON data directly.
