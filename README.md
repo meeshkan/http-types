@@ -8,12 +8,12 @@ At [Meeshkan](https://www.meeshkan.com/) we think that HTTP traffic is interesti
 
 Having a simple format that can be created from and processed in a variety of programming languages helps out with that.
 
-# Implementations
+# Libraries
 Don't see your language of choice here? If you write your own and [tell us about it](https://github.com/Meeshkan/http-types/issues/new) we'll add it to this list:
 
-- [java-http-types](https://github.com/Meeshkan/java-http-types): Java implementation available on [Maven Central](https://search.maven.org/artifact/com.meeshkan/http-types).
-- [py-http-types](https://github.com/Meeshkan/py-http-types): Python implementation available on [PyPi](https://pypi.org/project/http-types/).
-- [ts-http-types](https://github.com/Meeshkan/ts-http-types): TypeScript implementation available on [npm](https://www.npmjs.com/package/http-types).
+- [java-http-types](https://github.com/Meeshkan/java-http-types): Java library available on [Maven Central](https://search.maven.org/artifact/com.meeshkan/http-types).
+- [py-http-types](https://github.com/Meeshkan/py-http-types): Python library available on [PyPi](https://pypi.org/project/http-types/).
+- [ts-http-types](https://github.com/Meeshkan/ts-http-types): TypeScript library available on [npm](https://www.npmjs.com/package/http-types).
 
 # JSON representation
 While most use cases can be covered by using one of the above listed libraries, you may want to process the JSON data directly.
