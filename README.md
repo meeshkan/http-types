@@ -58,4 +58,4 @@ jsonschema -i <(head -n 1 resources/sample.jsonl) http-types-schema.json
 ```
 
 # Reporting issues
-[Create an issue](https://github.com/Meeshkan/http-types/issues) if you have any issue or idea for the format.
+[Create an issue](https://github.com/Meeshkan/http-types/issues) if you encounter a problem, have a question or an idea!
