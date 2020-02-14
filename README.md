@@ -58,7 +58,7 @@ The format is described in [http-types-schema.json](http-types-schema.json) and 
 
 As an alternative to providing `pathname` and `query` as separate properties, one can provide a single `path` property:
 
-```json
+```js
   "request": {
     [...]
     "path": "/user/repos?param=value",
