@@ -75,7 +75,7 @@ With the [jsonschema](https://python-jsonschema.readthedocs.io/) command-line va
 jsonschema -i <(head -n 1 resources/sample.jsonl) http-types-schema.json
 ```
 
-# What about binary request or response bodies?
+# Binary content
 Request or response bodies with binary content are currently out of scope - leave those out completely or remove the `body` field for these.
 
 # Reporting issues
