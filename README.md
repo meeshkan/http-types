@@ -3,7 +3,7 @@
 
 HTTP Types is a format for HTTP exchanges and libraries for reading and writing that format.
 
-Each HTTP exchange (request and response) is a JSON object following the [http-types-schema.json](http-types-schema.json) schema, with multiple requests being represented with a object per line in the [JSON Lines](http://jsonlines.org/) format.
+Each HTTP exchange (request and response) is a JSON object following the [http-types-schema.json](http-types-schema.json) schema, with a series of exchanges being represented with an object per line, [JSON Lines](http://jsonlines.org/) style.
 
 # Why?
 At [Meeshkan](https://www.meeshkan.com/) we think that HTTP traffic is interesting and that much can be learned from it!
