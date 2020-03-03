@@ -1,7 +1,7 @@
 [![Build Status](https://github.com/Meeshkan/http-types/workflows/CI/badge.svg)](https://github.com/Meeshkan/http-types/actions?query=workflow%3A%22CI%22)
 [![MIT licensed](http://img.shields.io/:license-MIT-blue.svg)](LICENSE.txt)
 
-HTTP Types is a format for HTTP exchanges and libraries for reading and writing that format.
+http-types is a format for HTTP exchanges and libraries for reading and writing that format.
 
 Each HTTP exchange (request and response) is a JSON object following the [http-types-schema.json](http-types-schema.json) schema, with a series of exchanges being represented with an object per line, [JSON Lines](http://jsonlines.org/) style.
 
@@ -11,7 +11,7 @@ At [Meeshkan](https://www.meeshkan.com/) we think that HTTP traffic is interesti
 Having a simple format that can be created from and processed in a variety of programming languages helps out with that.
 
 # Libraries
-For most use cases you can use one of the below libraries to read and write HTTP exchanges in the HTTP Types format and do not need to about the details of the JSON format.
+For most use cases you can use one of the below libraries to read and write HTTP exchanges in the http-types format and do not need to about the details of the JSON format.
 
 Don't see your language of choice here? If you write your own and [tell us about it](https://github.com/Meeshkan/http-types/issues/new) we'll add it to this list:
 
@@ -20,7 +20,7 @@ Don't see your language of choice here? If you write your own and [tell us about
 - [ts-http-types](https://github.com/Meeshkan/ts-http-types): TypeScript library available on [npm](https://www.npmjs.com/package/http-types).
 
 # Middlewares
-HTTP Types middlewares are interceptors of traffic allowing HTTP Types output to be generated from intercepted traffic. Currently there is only one available:
+Middlewares are interceptors of traffic allowing http-types output to be generated from intercepted traffic. Currently there is only one available:
 
 - [Express.js middleware](https://github.com/Meeshkan/express-middleware/)
 
