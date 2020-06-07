@@ -33,6 +33,7 @@ The format is described in [http-types-schema.json](http-types-schema.json) and 
 ```json
 {
   "request": {
+    "url": "http://example.com/user/repos",
     "method": "get",
     "protocol": "http",
     "host": "example.com",

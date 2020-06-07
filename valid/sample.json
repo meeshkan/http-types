@@ -1,5 +1,6 @@
 {
   "request": {
+    "url": "http://example.com/user/repos",
     "protocol": "http",
     "method": "get",
     "headers": {

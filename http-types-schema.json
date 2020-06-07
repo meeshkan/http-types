@@ -6,11 +6,17 @@
   "description": "A HTTP request and response pair.",
   "required": [ "request" ],
   "properties": {
+    "meta": {
+      "title": "HttpMeta",
+      "description": "A free-form field to store meta-information about a request.",
+      "type": "object",
+      "additionalProperties": true
+    },
     "request": {
       "title": "HttpRequest",
       "description": "A HTTP request.",
       "type": "object",
-      "required": ["protocol", "method", "headers", "host"],
+      "required": ["url", "method"],
       "properties": {
         "method": {
           "title": "HttpMethod",
@@ -27,6 +33,11 @@
         "host": {
           "title": "HttpHost",
           "description": "The hostname and optional port, as in '$HOSTNAME[:$PORT]'.",
+          "type": "string"
+        },
+        "url": {
+          "title": "HttpUrl",
+          "description": "The entire, unparsed URL of a request.",
           "type": "string"
         },
         "path": {
