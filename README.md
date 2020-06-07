@@ -6,11 +6,13 @@ http-types is a format for HTTP exchanges and libraries for reading and writing 
 Each HTTP exchange (request and response) is a JSON object following the [http-types-schema.json](http-types-schema.json) schema, with a series of exchanges being represented with an object per line, [JSON Lines](http://jsonlines.org/) style.
 
 # Why?
+
 At [Meeshkan](https://www.meeshkan.com/) we think that HTTP traffic is interesting and that much can be learned from it!
 
 Having a simple format that can be created from and processed in a variety of programming languages helps out with that.
 
 # Libraries
+
 For most use cases you can use one of the below libraries to read and write HTTP exchanges in the http-types format and do not need to about the details of the JSON format.
 
 Don't see your language of choice here? If you write your own and [tell us about it](https://github.com/Meeshkan/http-types/issues/new) we'll add it to this list:
@@ -20,18 +22,23 @@ Don't see your language of choice here? If you write your own and [tell us about
 - [ts-http-types](https://github.com/Meeshkan/ts-http-types): TypeScript library available on [npm](https://www.npmjs.com/package/http-types).
 
 # Middlewares
+
 Middlewares are interceptors of traffic allowing http-types output to be generated from intercepted traffic. Currently there is only one available:
 
 - [Express.js middleware](https://github.com/Meeshkan/express-middleware/)
 
-
 # JSON representation
+
 While most use cases can be covered by using one of the above listed libraries, you may want to generated or process the JSON data directly.
 
 The format is described in [http-types-schema.json](http-types-schema.json) and an example of a single HTTP exchange is given below.
 
 ```json
 {
+  "meta": {
+    "field1": 0,
+    "field2": 0
+  },
   "request": {
     "method": "get",
     "protocol": "http",
@@ -76,7 +83,9 @@ jsonschema -i <(head -n 1 resources/sample.jsonl) http-types-schema.json
 ```
 
 # Binary content
+
 Request or response bodies with binary content are currently out of scope - leave those out completely or remove the `body` field for these.
 
 # Reporting issues
+
 [Create an issue](https://github.com/Meeshkan/http-types/issues) if you encounter a problem, have a question or an idea.
