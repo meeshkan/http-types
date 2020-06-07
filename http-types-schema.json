@@ -16,7 +16,7 @@
       "title": "HttpRequest",
       "description": "A HTTP request.",
       "type": "object",
-      "required": ["url", "method"],
+      "required": ["method"],
       "properties": {
         "method": {
           "title": "HttpMethod",
