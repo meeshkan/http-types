@@ -16,6 +16,7 @@ For most use cases you can use one of the below libraries to read and write HTTP
 Don't see your language of choice here? If you write your own and [tell us about it](https://github.com/Meeshkan/http-types/issues/new) we'll add it to this list:
 
 - [java-http-types](https://github.com/Meeshkan/java-http-types): Java library available on [Maven Central](https://search.maven.org/artifact/com.meeshkan/http-types).
+- [purescript-http-types](https://github.com/meeshkan/purescript-http-types): PureScript library.
 - [py-http-types](https://github.com/Meeshkan/py-http-types): Python library available on [PyPi](https://pypi.org/project/http-types/).
 - [ts-http-types](https://github.com/Meeshkan/ts-http-types): TypeScript library available on [npm](https://www.npmjs.com/package/http-types).
 
